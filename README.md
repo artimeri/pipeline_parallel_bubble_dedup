@@ -1,11 +1,11 @@
-# parallexpert_jd440
+# pipeline_parallel_bubble_dedup
 
 **在预训练并行策略专家·流水线并行气泡比例里找出重复内容并给出归并建议。**
 
-`parallexpert_jd440` —— 对内容做归一化与分片比对，找出预训练并行策略专家·流水线并行气泡比例上的重复项并按相似度归并
+`pipeline_parallel_bubble_dedup` —— 对内容做归一化与分片比对，找出预训练并行策略专家·流水线并行气泡比例上的重复项并按相似度归并
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`parallexpert_jd440.py` 拷走就能用
+- 单文件，`pipeline_parallel_bubble_dedup.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install artimeri-parallexpert_jd440
+pip install artimeri-pipeline_parallel_bubble_dedup
 ```
 
 装完直接用命令名调用：
 
 ```bash
-parallexpert_jd440 --help
+pipeline_parallel_bubble_dedup --help
 ```
 
-也可以不用安装，直接把 `parallexpert_jd440.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `pipeline_parallel_bubble_dedup.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ parallexpert_jd440 --help
 ## 用法
 
 ```bash
-python parallexpert_jd440.py --file input.txt
-python parallexpert_jd440.py --text "示例内容"
-python parallexpert_jd440.py --file input.txt --json
+python pipeline_parallel_bubble_dedup.py --file input.txt
+python pipeline_parallel_bubble_dedup.py --text "示例内容"
+python pipeline_parallel_bubble_dedup.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python parallexpert_jd440.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_parallexpert_jd440.py
+python test_pipeline_parallel_bubble_dedup.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_parallexpert_jd440.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/artimeri/parallexpert_jd440>
+- GitHub 仓库：<https://github.com/artimeri/pipeline_parallel_bubble_dedup>
 
 ---
 
@@ -79,7 +79,7 @@ python test_parallexpert_jd440.py
 artimeri 做预训练并行策略专家·流水线并行气泡比例相关的问题，方向对标小米的实习预训练并行策略专家岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://artimeri.github.io>
-- 仓库：<https://github.com/artimeri/parallexpert_jd440>
+- 仓库：<https://github.com/artimeri/pipeline_parallel_bubble_dedup>
 
 ## 许可
 
